@@ -4,8 +4,13 @@ $(document).ready(function(){
   var tablect = 0;
   var subtotal = 0;
   const tax= 0.08;
+  let count = 0;
   var renderCard = function(e){;
     if(e.target.value){
+      if (count>6){
+        alert('Slow your roll, please only oder at max 6 items.')
+        return 
+      }
       let itemarray=e.target.value.split('-')
       let itemname=itemarray[0];
       let itemprice=itemarray[1];
@@ -24,6 +29,7 @@ $(document).ready(function(){
       $tablesubtotal.append(subtotal.toFixed(2));
       $tabletax.append((tax*subtotal).toFixed(2));
       $tabletotal.append((subtotal+(subtotal*tax)).toFixed(2));
+      count++
     }
   }
   var submit = function(e){
