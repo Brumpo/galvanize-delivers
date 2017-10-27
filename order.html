@@ -18,7 +18,7 @@
     <nav class="amber darken-4" role="navigation">
       <div class="nav-wrapper container">
         <a id="logo-container" href="order.html" class="header right grey-text text-darken-4">Order Delivery</a>
-        <h4 style="padding-top: 12px"><a href='index.html' class='left-down grey-text text-darken-4'>Galvinize Delivers</a></h4>
+        <h5 style="padding-top: 12px"><a href='index.html' class='left-down grey-text text-darken-4'>Galvinize Delivers</a></h5>
       </div>
     </nav>
       <div class='container'>
@@ -33,11 +33,11 @@
                     <div class='card-image'>
                       <img src='img/burger.jpg'>
                     </div>
-                    <h4>Royale with cheese</h4>
+                    <h4>Royale with Cheese</h4>
                     <h5>$8.99</h5>
                   </div>
                   <div class='card-action'>
-                    <button class='waves-effect waves-light btn center' value="Royale with cheese-$8.99">order</button>
+                    <button class='waves-effect waves-light btn center' value="Royale with Cheese-8.99">order</button>
                   </div>
                 </div>
               </div>
@@ -51,7 +51,7 @@
                   <h5>$11.99</h5>
                 </div>
                 <div class='card-action'>
-                  <button class='waves-effect waves-light btn center' value='Arugala Pie-$11.99'>order</button>
+                  <button class='waves-effect waves-light btn center' value='Arugala Pie-11.99'>order</button>
                 </div>
               </div>
             </div>
@@ -67,7 +67,7 @@
                   <h5>$14.99</h5>
                 </div>
                 <div class='card-action'>
-                  <button class='waves-effect waves-light btn center' value='Smoked Swine-$14.99'>order</button>
+                  <button class='waves-effect waves-light btn center' value='Smoked Swine-14.99'>order</button>
                 </div>
               </div>
             </div>
@@ -77,11 +77,11 @@
                   <div class='card-image'>
                     <img src='img/ice_cream.jpg'>
                   </div>
-                  <h4>ICEY BISCUTS</h4>
+                  <h4>Ice Cream Biscuts</h4>
                   <h5>$7.99</h5>
                 </div>
                 <div class='card-action'>
-                  <button class='waves-effect waves-light btn center' value='ICEY BISCUTS-$7.99'>order</button>
+                  <button class='waves-effect waves-light btn center' value='Ice Cream Biscuts-7.99'>order</button>
                 </div>
               </div>
             </div>
@@ -126,20 +126,20 @@
                   <td class='tableprice'></td>
                 </tr>
                 <tr class='tablerow'>
-                  <td class='tablename'></td>
-                  <td class='tableprice'></td>
+                  <td class='tablename'>Subtotal</td>
+                  <td class='tableprice' id='subtotal'></td>
                 </tr>
                 <tr class='tablerow'>
-                  <td class='tablename'></td>
-                  <td class='tableprice'></td>
+                  <td class='tablename'>Tax</td>
+                  <td class='tableprice' id='tax'></td>
                 </tr>
                 <tr class='tablerow'>
-                  <td class='tablename'></td>
-                  <td class='tableprice'></td>
+                  <td class='tablename'>Total</td>
+                  <td class='tableprice' id='total'></td>
                 </tr>
                 </tbody>
               </table>
-              <form class="col s12">
+              <form id='myForm' class="col s12">
                   <div class="input-field">
                     <i class="material-icons prefix">account_circle</i>
                     <input id="icon_name" type="text" class="validate" required><br>
