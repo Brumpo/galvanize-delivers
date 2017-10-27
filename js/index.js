@@ -7,9 +7,13 @@ $(document).ready(function(){
   let count = 0;
   var renderCard = function(e){;
     if(e.target.value){
-      if (count>6){
+      if (count=6){
         alert('Slow your roll, please only oder at max 6 items.')
-        return 
+        return
+      }
+      if(count>6){
+        location.reload();
+        return
       }
       let itemarray=e.target.value.split('-')
       let itemname=itemarray[0];
